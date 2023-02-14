@@ -1,0 +1,132 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: gray;
+    max-height: 65px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container span {
+    line-height: 2;
+    display: block;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul li {
+    padding: 20px;
+    background-color: black;
+}
+
+ul li:hover {
+    background-color: white;
+}
+
+ul li a {
+    display: block;
+    color: white;
+}
+
+ul li:hover > a {
+    color: black;
+}
+
+.main-content .container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main-content .container .card {
+    background-color: #d8d4d4;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main-content .container .card h3 {
+    margin-bottom: 20px;
+}
+
+.main-content .container .card form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.main-content .container .card form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 50%;
+}
+
+.main-content .container .card form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+.main-content .container .card form input[type="submit"]:hover {
+    background-color: gray;
+}
